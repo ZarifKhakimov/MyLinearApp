@@ -6,51 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:weightSum="5"
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <TextView
-            android:text="UserId"
-            android:id="@+id/user_id1"
-            android:textSize="20sp"
-            android:layout_marginLeft="20dp"
+        <TableRow
+            android:id="@+id/t_row"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <EditText
-            android:id="@+id/ed_user_id1"
-            android:hint="ID"
-            android:layout_width="350sp"
-            android:layout_height="20sp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="0.5" />
+            android:layout_height="match_parent">
 
 
-        <TextView
-            android:text="UserPw"
-            android:layout_marginLeft="20dp"
-            android:gravity="center_vertical"
-            android:id="@+id/user_pw1"
-            android:textSize="20sp"
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="Userid3"
+                android:textSize="25sp" />
+
+            <EditText
+                android:layout_width="289dp"
+                android:layout_height="match_parent"
+                android:hint="Id"
+                android:padding="10dp"
+                android:textSize="25sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/t_row1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/ed_user_pw1"
-            android:hint="PW"
-            android:layout_width="350sp"
-            android:layout_height="20sp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="0.5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:text="UserPw3"
+                android:textSize="25sp" />
+
+
+            <EditText
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:hint="Pw"
+                android:padding="10dp"
+                android:textSize="25sp" />
+        </TableRow>
 
         <Button
-            android:text="login"
-            android:layout_width="150sp"
-            android:layout_height="60sp" />
-    </LinearLayout>
+            android:layout_width="192dp"
+            android:layout_height="60sp"
+            android:text="Login"
+            tools:layout_editor_absoluteX="109dp"
+            tools:layout_editor_absoluteY="447dp"
+            tools:ignore="MissingConstraints" />
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
